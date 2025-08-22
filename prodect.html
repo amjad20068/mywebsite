@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<style>
+    body{
+        margin: 0px;
+        padding: 0px;
+        background: radial-gradient(circle, #ffc800, #f3d771 );
+;
+    }
+</style>
+<body> 
+      <nav>
+    <div class="nav-logo">
+      <img src="assets/wclogo.png" alt="Wyncrave Logo">
+    </div>
+    <ul class="nav-links">
+      <li class="link"><a href="index.html">Home</a></li>
+      <li class="link"><a href="#">Contact Us</a></li>
+      <li class="link cart-icon">
+        <a href="javascript:void(0)" id="cart-toggle">
+          <i class="fas fa-shopping-cart"></i><span id="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+      <section class="section-container" id="products">
+    <h2 class="section-header">Popular Products</h2>
+    <p class="section-subheader">Discover our best-selling honey and spice collections.</p>
+    <div class="popular-grid">
+      <div class="popular-card" data-name="Honey Twin Pack" data-price="499">
+        <img src="assets/honey 2 bottle.jpeg" alt="Honey Twin Pack">
+        <div class="popular-content">
+          <div class="popular-card-header">
+            <h4>Honey Twin Pack</h4>
+            <p>₹499</p>
+          </div>
+          <button class="btn add-to-cart">Order Now</button>
+          <p>Pure Forest Honey</p>
+        </div>
+      </div>
+      <div class="popular-card" data-name="Honey 250g" data-price="499">
+        <img src="assets/honey 250g.jpeg" alt="Honey 250g">
+        <div class="popular-content">
+          <div class="popular-card-header">
+            <h4>Honey 250g</h4>
+            <p>₹499</p>
+          </div>
+          <button class="btn add-to-cart">Order Now</button>
+          <p>Portable natural sweetness</p>
+        </div>
+      </div>
+      <div class="popular-card" data-name="Honey Tube Box" data-price="500">
+        <img src="assets/honey tube box.jpeg" alt="Honey Tube Box">
+        <div class="popular-content">
+          <div class="popular-card-header">
+            <h4>Honey Tube Box</h4>
+            <p>₹500</p>
+          </div>
+          <button class="btn add-to-cart">Order Now</button>
+          <p>On-the-go honey sticks</p>
+        </div>
+      </div>
+      <div class="popular-card" data-name="Honey Tube" data-price="5">
+        <img src="assets/honey tube.jpeg" alt="Honey Tube">
+        <div class="popular-content">
+          <div class="popular-card-header">
+            <h4>Honey Tube</h4>
+            <p>₹5</p>
+          </div>
+          <button class="btn add-to-cart">Order Now</button>
+          <p>Perfect for daily use</p>
+        </div>
+      </div>
+      <div class="popular-card" data-name="Organic Spices" data-price="599">
+        <img src="assets/spices.jpeg" alt="Organic Spices">
+        <div class="popular-content">
+          <div class="popular-card-header">
+            <h4>Organic Spices</h4>
+            <p>₹599</p>
+          </div>
+          <button class="btn add-to-cart">Order Now</button>
+          <p>Freshly packed from Wayanad</p>
+        </div>
+      </div>
+    </div>
+  </section>
+    <!-- Cart Sidebar -->
+  <div id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">✖</button>
+    </div>
+    <div id="cart-items"></div>
+    <p id="cart-total"><strong>Total:</strong> ₹0</p>
+    <button id="confirm-order" class="btn confirm-btn">Confirm Order</button>
+
+    <!-- Address Form -->
+    <div id="address-form" class="hidden">
+      <h4>Enter Delivery Address</h4>
+      <textarea id="address-input" placeholder="Enter your address..."></textarea>
+      <h4>Enter Pin code</h4>
+      <textarea id="address-input" placeholder="Enter Pin code..."></textarea>
+       <h4>Enter Phone Number</h4>
+      <textarea id="address-input" placeholder="Enter Phone Number..."></textarea>
+      <button id="place-order" class="btn confirm-btn">Place Order</button>
+    </div>
+
+    <!-- Success Message -->
+    <div id="order-success" class="hidden">
+      <i class="fas fa-check-circle"></i>
+      <p>Order Placed Successfully!</p>
+    </div>
+  </div>
+
+    <footer class="footer">
+    <div class="footer-bar">© 2025 Wyncrave. All rights reserved.</div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>

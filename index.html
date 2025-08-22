@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyncrave</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="nav-logo">
+      <img src="assets/wclogo.png" alt="Wyncrave Logo">
+    </div>
+    <ul class="nav-links">
+      <li class="link"><a href="#">Home</a></li>
+      <li class="link"><a href="#">Contact Us</a></li>
+      <li class="link cart-icon">
+        <a href="javascript:void(0)" id="cart-toggle">
+          <i class="fas fa-shopping-cart"></i><span id="cart-count">0</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="header-container">
+    <div class="header-image-container">
+      <div class="header-content">
+        <h1>Feed your craving with every taste - Stay Tuned!</h1>
+        <p>We are currently working on exciting updates to enhance our website and better showcase our products. We appreciate your patience and look forward to unveiling our new site soon. In the meantime, please feel free to contact us at info@wyncrave.com or +918281694223 for any inquiries or immediate assistance.</p>
+        <a href="prodect.html" class="btn header-btn">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Products -->
+
+  <!-- Cart Sidebar -->
+  <div id="cart-sidebar">
+    <div class="cart-header">
+      <h3>Your Cart</h3>
+      <button id="close-cart">✖</button>
+    </div>
+    <div id="cart-items"></div>
+    <p id="cart-total"><strong>Total:</strong> ₹0</p>
+    <button id="confirm-order" class="btn confirm-btn">Confirm Order</button>
+
+    <!-- Address Form -->
+    <div id="address-form" class="hidden">
+      <h4>Enter Delivery Address</h4>
+      <textarea id="address-input" placeholder="Enter your address..."></textarea>
+      <button id="place-order" class="btn confirm-btn">Place Order</button>
+    </div>
+
+    <!-- Success Message -->
+    <div id="order-success" class="hidden">
+      <i class="fas fa-check-circle"></i>
+      <p>Order Placed Successfully!</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-bar">© 2025 Wyncrave. All rights reserved.</div>
+  </footer>
+<script src="script.js"></script>
+</body>
+</html>
